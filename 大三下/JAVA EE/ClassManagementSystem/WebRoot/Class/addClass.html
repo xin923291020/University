@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="JsFiles/jquery-1.9.1.js"></script>
+<script src="JsFiles/layer.js"></script>
+<script src="JsFiles/layui-v1.0.9_rls/layui/layui.js" charset="utf-8"></script>
+<link href="CssFiles/layer.css" type="text/css" rel="stylesheet" />
+<link href="CssFiles/layui.css" type="text/css" rel="stylesheet" />
+<script>
+layui.use(['laydate','layedit']);
+</script>
+</head>
+<body>
+	<form class="layui-form layui-form-pane" action="classInfoAction"
+		method="post">
+		<input type="hidden" name="type" value="add">
+		<div style="margin-left:25px;margin-top:8px">
+			<label>班级：</label>
+			<div class="layui-input-inline" style="width:105px;">
+				<select name="classPrefix" style="height:38px;">
+					<option value="0000">年级</option>
+					<option value="1701">信1701</option>
+					<option value="1702">信1702</option>
+					<option value="1703">信1703</option>
+					<option value="1704">信1704</option>
+					<option value="1705">信1705</option>
+				</select>
+			</div>
+			<label>-</label>
+			<div class="layui-input-inline" style="width:105px;">
+				<select name="classSuffix" style="height:38px;">
+					<option value="00">班号</option>
+					<option value="01">1</option>
+					<option value="02">2</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<button type="submit" id="confirm"
+				class="layui-btn layui-btn-small layui-btn-normal"
+				style="margin-top:35px;margin-left:138px;">确定</button>
+		</div>
+	</form>
+</body>
+</html>

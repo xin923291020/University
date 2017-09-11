@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "判断一年中的第几天", "判断一年中的第几天\判断一年中的第几天.vcproj", "{F8D8A6B1-2919-41E0-A337-77DFDFA07B56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8D8A6B1-2919-41E0-A337-77DFDFA07B56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8D8A6B1-2919-41E0-A337-77DFDFA07B56}.Debug|Win32.Build.0 = Debug|Win32
+		{F8D8A6B1-2919-41E0-A337-77DFDFA07B56}.Release|Win32.ActiveCfg = Release|Win32
+		{F8D8A6B1-2919-41E0-A337-77DFDFA07B56}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

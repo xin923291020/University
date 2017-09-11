@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+    <item
+        android:id="@+id/password_revise"
+        android:title="修改密码"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/password_show"
+        android:title="查看密码"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/user_del"
+        android:title="删除"
+        app:showAsAction="never"/>
+</menu>

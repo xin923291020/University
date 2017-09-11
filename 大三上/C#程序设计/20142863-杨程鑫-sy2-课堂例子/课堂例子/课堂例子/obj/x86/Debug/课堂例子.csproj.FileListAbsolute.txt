@@ -1,0 +1,4 @@
+C:\Users\asus1\Desktop\C#程序\课堂例子\课堂例子\bin\Debug\课堂例子.exe
+C:\Users\asus1\Desktop\C#程序\课堂例子\课堂例子\bin\Debug\课堂例子.pdb
+C:\Users\asus1\Desktop\C#程序\课堂例子\课堂例子\obj\x86\Debug\课堂例子.exe
+C:\Users\asus1\Desktop\C#程序\课堂例子\课堂例子\obj\x86\Debug\课堂例子.pdb

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Organization" table="organization" schema="dbo"
+		catalog="VatInvoiceStatistics">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property name="type" type="java.lang.String">
+			<column name="type" length="20" />
+		</property>
+		<property name="organizationCode" type="java.lang.String">
+			<column name="organizationCode" length="20" />
+		</property>
+		<property name="organizationName" type="java.lang.String">
+			<column name="organizationName" length="20" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="address" length="40" />
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="phone" length="20" />
+		</property>
+	</class>
+</hibernate-mapping>

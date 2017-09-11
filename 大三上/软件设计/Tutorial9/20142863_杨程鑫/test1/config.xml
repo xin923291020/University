@@ -1,0 +1,5 @@
+<?xml version = "1.0" ?>
+<config>
+	<className>Bus</className>
+	<className>AsphaltRoad</className>
+</config>

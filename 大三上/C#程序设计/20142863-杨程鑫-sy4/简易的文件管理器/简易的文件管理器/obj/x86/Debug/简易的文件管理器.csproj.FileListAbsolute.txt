@@ -1,0 +1,10 @@
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\bin\Debug\简易的文件管理器.exe
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\bin\Debug\简易的文件管理器.pdb
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.Properties.Resources.resources
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.简易的文件管理器.resources
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.csproj.GenerateResource.Cache
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.exe
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.pdb
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\bin\Debug\简易的文件管理器.exe.config
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\bin\Debug\CSkin.dll
+C:\Users\asus1\Desktop\C#程序\简易的文件管理器\简易的文件管理器\obj\x86\Debug\简易的文件管理器.csprojResolveAssemblyReference.cache

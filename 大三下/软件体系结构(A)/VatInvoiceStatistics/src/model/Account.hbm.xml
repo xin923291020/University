@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Account" table="account" schema="dbo"
+		catalog="VatInvoiceStatistics">
+		<id name="taxpayerNumber" type="java.lang.String">
+			<column name="taxpayerNumber" length="20" />
+			<generator class="assigned" />
+		</id>
+		<property name="account" type="java.lang.String">
+			<column name="account" length="50" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="registrationTime" type="java.lang.String">
+			<column name="registrationTime" length="40" />
+		</property>
+	</class>
+</hibernate-mapping>

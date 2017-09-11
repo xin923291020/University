@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>班级管理系统</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="CssFiles/layer.css" type="text/css" rel="stylesheet" />
+<link href="CssFiles/layui.css" type="text/css" rel="stylesheet" />
+<script src="JsFiles/layer.js"></script>
+<script src="JsFiles/layui-v1.0.9_rls/layui/layui.js" charset="utf-8"></script>
+<script src="JsFiles/jquery-1.9.1.js"></script>
+<script>
+layui.use(['layer']);
+$(document).ready(function()
+{
+	$("#a1").click(function()
+	{
+		frames["iframe"].src = "./Class/classInfo.jsp";
+	});
+	$("#a2").click(function()
+	{
+		frames["iframe"].src = "./Student/student.jsp";
+	});
+	$("#a3").click(function()
+	{
+		frames["iframe"].src = "./Course/course.jsp";
+	});
+	$("#a4").click(function()
+	{
+		frames["iframe"].src = "./CurriculaVariable/curriculaVariable.jsp";
+	});
+	$("#a5").click(function()
+	{
+		frames["iframe"].src = "./Grade/grade.jsp";
+	});
+	$("#a6").click(function()
+	{
+		frames["iframe"].src = "./Score/score.jsp";
+	});
+	$("#a7").click(function()
+	{
+		layer.open(
+		{
+			type: 1,
+			title: false,
+			closeBtn: false,
+			shade: 0.8,
+			resize: false,
+			btn: ['确认'],
+			btnAlign: 'c',
+			moveType: 1,
+			content: "<div style='padding:50px;line-height:22px;"+
+			"background-color:#393D49;color:#E1E1E1;font-weight:300;'>学号:20142863"+
+			"<br>姓名:杨程鑫<br>联系方式:18932599331</div>",
+		});
+	});
+	$("#a8").click(function()
+	{
+		layer.open(
+		{
+			type: 1,
+			title: false,
+			closeBtn: false,
+			shade: 0.8,
+			resize: false,
+			btn: ['确认'],
+			btnAlign: 'c',
+			moveType: 1,
+			content: "<div style='padding:50px;line-height:22px;"+
+			"background-color:#393D49;color:#E1E1E1;font-weight:300;'>版本:V1.0"+
+			"<br>2017年4月2日 - 2017年4月6日</div>",
+		});
+	});
+});
+</script>
+</head>
+<body>
+<div class="layui-side layui-bg-black">
+	<div class="layui-side-scroll">
+		<ul class="layui-nav layui-nav-tree">
+			<li class="layui-nav-item layui-nav-itemed"><a
+				href="javascript:;">班级管理系统</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a id="a1" href="javascript:;">班级信息</a>
+					</dd>
+					<dd>
+						<a id="a2" href="javascript:;">学生信息</a>
+					</dd>
+					<dd>
+						<a id="a3" href="javascript:;">课程信息</a>
+					</dd>
+					<dd>
+						<a id="a4" href="javascript:;">选课信息</a>
+					</dd>
+					<dd>
+						<a id="a5" href="javascript:;">成绩录入</a>
+					</dd>
+					<dd>
+						<a id="a6" href="javascript:;">成绩查询</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item"><a id="a7" href="javascript:;">开发者</a></li>
+			<li class="layui-nav-item"><a id="a8" href="javascript:;">版本</a></li>
+		</ul>
+	</div>
+</div>
+<iframe id="iframe" src="HomePage/welcome.jsp" width="82%" height="650px" style="margin-left:200px;border:0px"></iframe>
+</body>
+</html>

@@ -1,0 +1,16 @@
+启动hadoop	sbin/start-all.sh
+hadoop查看所有文件	bin/hadoop fs -ls /
+关闭hadoop	sbin/stop-all.sh
+启动hbase	bin/start-hbase.sh
+进入hbase shell	$HBASE_HOME/bin/hbase shell
+打开kv		java -jar lib/kvstore.jar kvlite
+退出安全模式	bin/hdfs dfsadmin -safemode leave
+hive创建表	create table ssxTable(id int,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+mapReduce插入一条数据	insert into ssxTable values(1,'yangchengxin');
+上传已存在的文件	load data local inpath '/home/shenshenxin/load.txt' into table ssxTable;
+hive创建外部表	create external table ycxTable(id int,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' location '/external';
+上传hive外部表文件到hadoop	bin/hadoop fs -put /home/shenshenxin/load.txt /external
+创建分区表	create table partitionTable(id int,name string) partitioned by(daytime string,city string) row format delimited fields terminated by ',' stored as TEXTFILE;
+上传分区表数据	load data local inpath '/home/shenshenxin/load.txt' into table partitionTable partition (daytime='2017-07-10',city='tj');
+创建json表	create table json(id int, name string) ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'  STORED AS TEXTFILE;
+上传json数据	load data local inpath '/home/shenshenxin/json.txt' into table json;

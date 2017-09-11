@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "完数", "完数\完数.vcproj", "{F6883254-82E5-4484-80D8-27F3C6E578DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6883254-82E5-4484-80D8-27F3C6E578DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6883254-82E5-4484-80D8-27F3C6E578DA}.Debug|Win32.Build.0 = Debug|Win32
+		{F6883254-82E5-4484-80D8-27F3C6E578DA}.Release|Win32.ActiveCfg = Release|Win32
+		{F6883254-82E5-4484-80D8-27F3C6E578DA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

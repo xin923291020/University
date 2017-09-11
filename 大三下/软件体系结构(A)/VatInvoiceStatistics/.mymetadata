@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="VatInvoiceStatistics"
+  id="myeclipse.1493091896137"
+  context-root="/VatInvoiceStatistics"
+  j2ee-spec="6.0"
+  archive="VatInvoiceStatistics.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

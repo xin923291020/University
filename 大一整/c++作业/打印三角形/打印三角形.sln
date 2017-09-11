@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "打印三角形", "打印三角形\打印三角形.vcproj", "{BBA476CF-3B79-40AE-BFE9-515F1C0BF5C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA476CF-3B79-40AE-BFE9-515F1C0BF5C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBA476CF-3B79-40AE-BFE9-515F1C0BF5C4}.Debug|Win32.Build.0 = Debug|Win32
+		{BBA476CF-3B79-40AE-BFE9-515F1C0BF5C4}.Release|Win32.ActiveCfg = Release|Win32
+		{BBA476CF-3B79-40AE-BFE9-515F1C0BF5C4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

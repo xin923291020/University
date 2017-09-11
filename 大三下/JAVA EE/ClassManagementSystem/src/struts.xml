@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- Add packages here -->
+    <constant name="struts.devMode" value="true"/>
+    <package name="login" namespace="/" extends="struts-default">
+        <action name="loginAction" class="action.LoginAction" method="doLogin">
+        </action>
+    </package>
+    <package name="classInfo" namespace="/" extends="struts-default">
+        <action name="classInfoAction" class="action.ClassInfoAction">
+        	<result name="success" type="redirect">/Class/classInfo.jsp</result>
+        </action>
+    </package>
+    <package name="student" namespace="/" extends="struts-default">
+        <action name="studentAction" class="action.StudentAction">
+        	<result name="success" type="redirect">/Student/student.jsp</result>
+        </action>
+    </package>
+    <package name="course" namespace="/" extends="struts-default">
+        <action name="courseAction" class="action.CourseAction">
+        	<result name="success" type="redirect">/Course/course.jsp</result>
+        </action>
+        <action name="dropCoursesAction" class="action.DropCoursesAction" method="doDrop"></action>
+        <action name="addCoursesAction" class="action.AddCoursesAction" method="doAdd"></action>
+    </package>
+    <package name="grade" namespace="/" extends="struts-default">
+        <action name="gradeAction" class="action.GradeAction" method="doUpdate">
+        </action>
+    </package>
+     <package name="ready" namespace="/" extends="struts-default">
+        <action name="courseReadyAction" class="action.ReadyAction" method="getCourseRequest"></action>
+        <action name="classInfoReadyAction" class="action.ReadyAction" method="getClassInfoRequest"></action>
+        <action name="studentReadyAction" class="action.ReadyAction" method="getStudentRequest"></action>
+    </package>
+    <package name="test" namespace="/" extends="struts-default">
+        <action name="testAction" class="action.TestAction" method="aa"></action>
+    </package>
+</struts>

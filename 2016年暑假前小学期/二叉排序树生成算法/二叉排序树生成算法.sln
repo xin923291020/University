@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉排序树生成算法", "二叉排序树生成算法\二叉排序树生成算法.vcxproj", "{D9317095-0C2B-49D1-95BA-E8F468A8F6A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9317095-0C2B-49D1-95BA-E8F468A8F6A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9317095-0C2B-49D1-95BA-E8F468A8F6A3}.Debug|Win32.Build.0 = Debug|Win32
+		{D9317095-0C2B-49D1-95BA-E8F468A8F6A3}.Release|Win32.ActiveCfg = Release|Win32
+		{D9317095-0C2B-49D1-95BA-E8F468A8F6A3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\Users\asus1\Desktop\C#窗口程序\CountEggs\CountEggs\bin\Debug\CountEggs.exe
+C:\Users\asus1\Desktop\C#窗口程序\CountEggs\CountEggs\bin\Debug\CountEggs.pdb
+C:\Users\asus1\Desktop\C#窗口程序\CountEggs\CountEggs\obj\x86\Debug\CountEggs.exe
+C:\Users\asus1\Desktop\C#窗口程序\CountEggs\CountEggs\obj\x86\Debug\CountEggs.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountEggs\CountEggs\obj\x86\Debug\CountEggs.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountEggs\CountEggs\obj\x86\Debug\CountEggs.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountEggs\CountEggs\bin\Debug\CountEggs.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountEggs\CountEggs\bin\Debug\CountEggs.pdb

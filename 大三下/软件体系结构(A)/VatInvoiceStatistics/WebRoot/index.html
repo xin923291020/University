@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>发票系统</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="CssFiles/layer.css" type="text/css" rel="stylesheet" />
+<link href="CssFiles/layui.css" type="text/css" rel="stylesheet" />
+<script src="JsFiles/layer.js"></script>
+<script src="JsFiles/layui-v1.0.9_rls/layui/layui.js" charset="utf-8"></script>
+<script src="JsFiles/jquery-1.9.1.js"></script>
+<script>
+layui.use(['layer']);
+$(document).ready(function()
+{
+	$("#a1").click(function()
+	{
+		frames["iframe"].src = "realTime.jsp";
+	});
+	$("#a2").click(function()
+	{
+		frames["iframe"].src = "chart.jsp";
+	});
+	$("#a3").click(function()
+	{
+		frames["iframe"].src = "analysis.jsp";
+	});
+	$("#a4").click(function()
+	{
+		frames["iframe"].src = "index.jsp";
+	});
+	$("#a5").click(function()
+	{
+		layer.open(
+		{
+			type: 1,
+			title: false,
+			closeBtn: false,
+			shade: 0.8,
+			resize: false,
+			btn: ['确认'],
+			btnAlign: 'c',
+			moveType: 1,
+			content: "<div style='padding:50px;line-height:22px;"+
+			"background-color:#393D49;color:#E1E1E1;font-weight:300;'>"+
+			"组长:杨程鑫;组员:何琳琳,张一博<br>联系方式:18932599331</div>",
+		});
+	});
+	$("#a6").click(function()
+	{
+		layer.open(
+		{
+			type: 1,
+			title: false,
+			closeBtn: false,
+			shade: 0.8,
+			resize: false,
+			btn: ['确认'],
+			btnAlign: 'c',
+			moveType: 1,
+			content: "<div style='padding:50px;line-height:22px;"+
+			"background-color:#393D49;color:#E1E1E1;font-weight:300;'>版本:V1.0"+
+			"<br>2017年5月6日 - 2017年5月7日</div>",
+		});
+	});
+});
+</script>
+</head>
+<body>
+<div class="layui-header header header-doc" style="float:right;:padding:0">
+  <div class="layui-main">
+    <ul class="layui-nav" pc>
+      <li class="layui-nav-item">
+        <a href="login.html" style="margin-left:1000px;">注销</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="layui-side layui-bg-black">
+	<div class="layui-side-scroll">
+		<ul class="layui-nav layui-nav-tree">
+			<li class="layui-nav-item layui-nav-itemed">
+				<a href="javascript:;">发票系统</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a id="a1" href="javascript:;">实时</a>
+					</dd>
+					<dd>
+						<a id="a2" href="javascript:;">图表</a>
+					</dd>
+					<dd>
+						<a id="a3" href="javascript:;">分析</a>
+					</dd>
+					<dd>
+						<a id="a4" href="javascript:;">导入</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item"><a id="a5" href="javascript:;">开发者</a></li>
+			<li class="layui-nav-item"><a id="a6" href="javascript:;">版本</a></li>
+		</ul>
+	</div>
+</div>
+<iframe id="iframe" src="index.jsp" width="85.3%" height="650px" style="margin-left:200px;border:0px"></iframe>
+</body>
+</html>

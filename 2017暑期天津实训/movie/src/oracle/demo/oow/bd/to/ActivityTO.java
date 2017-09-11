@@ -1,0 +1,294 @@
+package oracle.demo.oow.bd.to;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import java.util.Date;
+
+import org.codehaus.jackson.node.ObjectNode;
+import org.codehaus.jackson.JsonProcessingException;
+import oracle.demo.oow.bd.constant.JsonConstant;
+import oracle.demo.oow.bd.pojo.ActivityType;
+import oracle.demo.oow.bd.pojo.BooleanType;
+import oracle.demo.oow.bd.pojo.RatingType;
+
+public class ActivityTO extends BaseTO
+{
+
+	// defaults
+	private ActivityType activity = ActivityType.LIST_MOVIES;
+	private RatingType rating = RatingType.NO_RATING;
+	private BooleanType recommended = BooleanType.YES;
+	private static DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+	private int custId;
+	private String tableId = "CLICK";
+
+	private int movieId;
+	private int genreId;
+	private long timeStamp = 0;
+	private double price;
+	private int position;
+
+	/**
+	 * For SerDe purpose JSON object is used to write data into json text and
+	 * from json text to ActivityTO
+	 **/
+	private ObjectNode objectNode = null;
+
+	public ActivityTO()
+	{
+		super();
+		this.setTimeStamp(System.currentTimeMillis());
+	}
+
+	public ActivityTO(ObjectNode activityNode)
+	{
+		super();
+		this.setActivityJson(activityNode);
+
+	}
+
+	public ActivityTO(String actJsonTxt)
+	{
+		super();
+		try
+		{
+			objectNode = super.parseJson(actJsonTxt);
+		} catch (JsonProcessingException e)
+		{
+			e.printStackTrace();
+		}
+		this.setActivityJson(objectNode);
+
+	}
+
+
+	public void setTableId(String tableId)
+	{
+		this.tableId = tableId;
+	}
+
+	public String getTableId()
+	{
+		return tableId;
+	}
+	public void setActivity(ActivityType activity)
+	{
+		this.activity = activity;
+	}
+
+	public ActivityType getActivity()
+	{
+		return activity;
+	}
+
+	public void setRating(RatingType rating)
+	{
+		this.rating = rating;
+	}
+
+	public RatingType getRating()
+	{
+		return rating;
+	}
+
+	public void setRecommended(BooleanType recommended)
+	{
+		this.recommended = recommended;
+	}
+
+	public BooleanType isRecommended()
+	{
+		return recommended;
+	}
+
+	public void setCustId(int custId)
+	{
+		this.custId = custId;
+	}
+
+	public int getCustId()
+	{
+		return custId;
+	}
+
+	public void setMovieId(int movieId)
+	{
+		this.movieId = movieId;
+	}
+
+	public int getMovieId()
+	{
+		return movieId;
+	}
+
+	public void setTimeStamp(long timeStamp)
+	{
+		this.timeStamp = timeStamp;
+	}
+
+	public long getTimeStamp()
+	{
+		return timeStamp;
+	}
+
+	/**
+	 * Helper method converts Formatted Date String into milliseconds
+	 * 
+	 * @param dateStr
+	 * @return
+	 */
+	public long getTimeStamp(String dateStr)
+	{
+		Date date = null;
+		long timeStamp = 0;
+
+		try
+		{
+			date = dateFormat.parse(dateStr);
+			timeStamp = date.getTime();
+		} catch (ParseException e)
+		{
+			// System.out.println("Exception :" + e);
+			timeStamp = Long.parseLong(dateStr);
+		}
+
+		return timeStamp;
+	}
+
+	/**
+	 * Helper method to return time stamp as a formatted string.
+	 */
+	public String getFormattedTime()
+	{
+		String formattedTime = dateFormat.format(timeStamp);
+		return formattedTime;
+	}
+
+	public void setPrice(double price)
+	{
+		this.price = price;
+	}
+
+	public double getPrice()
+	{
+		return price;
+	}
+
+	public void setGenreId(int genreId)
+	{
+		this.genreId = genreId;
+	}
+
+	public int getGenreId()
+	{
+		return genreId;
+	}
+
+	public String getJsonTxt()
+	{
+		return this.getActivityJson().toString();
+	}
+
+	public ObjectNode getActivityJson()
+	{
+		this.objectNode = super.getObjectNode();
+
+		objectNode.put(JsonConstant.CUST_ID, this.getCustId());
+		if (this.getGenreId() > 0)
+		{
+			objectNode.put(JsonConstant.GENRE_ID, this.getGenreId());
+		}
+		objectNode.put(JsonConstant.TABLE_ID, this.getTableId());
+		objectNode.put(JsonConstant.MOVIE_ID, this.getMovieId());
+		objectNode.put(JsonConstant.ACTIVITY, this.getActivity().getValue());
+		objectNode.put(JsonConstant.RECOMMENDED, this.isRecommended().getValue());
+		objectNode.put(JsonConstant.TIME, this.getFormattedTime());
+
+		// Adding optional parameters
+		objectNode.put(JsonConstant.PRICE, this.getPrice());
+		objectNode.put(JsonConstant.RATING, this.getRating().getValue());
+		objectNode.put(JsonConstant.POSITION, this.getPosition());
+
+		return objectNode;
+	}
+
+	public ObjectNode getActivityJsonOriginal()
+	{
+		this.objectNode = super.getObjectNode();
+
+		objectNode.put(JsonConstant.CUST_ID, this.getCustId());
+		if (this.getGenreId() > 0)
+		{
+			objectNode.put(JsonConstant.GENRE_ID, this.getGenreId());
+		}
+
+		objectNode.put(JsonConstant.MOVIE_ID, this.getMovieId());
+		objectNode.put(JsonConstant.ACTIVITY, this.getActivity().getValue());
+		objectNode.put(JsonConstant.RECOMMENDED, this.isRecommended().getValue());
+		objectNode.put(JsonConstant.TIME, this.getFormattedTime());
+
+		// Adding optional parameters
+		objectNode.put(JsonConstant.PRICE, this.getPrice());
+		objectNode.put(JsonConstant.RATING, this.getRating().getValue());
+		objectNode.put(JsonConstant.POSITION, this.getPosition());
+
+		return objectNode;
+	}
+
+	public void setActivityJson(ObjectNode objectNode)
+	{
+		this.objectNode = objectNode;
+		ActivityType aType = null;
+
+		int custId = objectNode.get(JsonConstant.CUST_ID).getIntValue();
+		int movieId = objectNode.get(JsonConstant.MOVIE_ID).getIntValue();
+		int activityType = objectNode.get(JsonConstant.ACTIVITY).getIntValue();
+		String recommended = objectNode.get(JsonConstant.RECOMMENDED).getTextValue();
+		String dateStr = objectNode.get(JsonConstant.TIME).getTextValue();
+		double price = objectNode.get(JsonConstant.PRICE).getDoubleValue();
+		int rating = objectNode.get(JsonConstant.RATING).getIntValue();
+		int position = objectNode.get(JsonConstant.POSITION).getIntValue();
+
+		// create ActivityType object
+		aType = ActivityType.getType(activityType);
+
+		// now set it to this object
+		this.setCustId(custId);
+		this.setMovieId(movieId);
+		this.setTimeStamp(this.getTimeStamp(dateStr));
+		this.setActivity(aType);
+		this.setRecommended(BooleanType.getType(recommended));
+
+		// Adding the optional one
+		this.setPrice(price);
+		this.setRating(RatingType.getType(rating));
+		this.setPosition(position);
+
+		// Set genreId only if it is present in the jsonObject
+		if (objectNode.has(JsonConstant.GENRE_ID))
+		{
+			int genreId = objectNode.get(JsonConstant.GENRE_ID).getIntValue();
+			this.setGenreId(genreId);
+		}
+
+	} // setJsonObject
+
+	public void setPosition(int position)
+	{
+		this.position = position;
+	}
+
+	public int getPosition()
+	{
+		return position;
+	}
+
+	@Override
+	public String toJsonString()
+	{
+		return getJsonTxt();
+	}
+}

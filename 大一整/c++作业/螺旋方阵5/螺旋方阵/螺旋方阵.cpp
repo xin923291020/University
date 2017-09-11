@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int num[5][5];
+	int n = 0,i = 0,j;
+	
+	for(j = 0;j < 4;j++)
+	{
+		n++;num[i][j] = n;
+	}
+
+	for(i = 0;i < 4;i++)
+	{
+		n++;num[i][j] = n;
+	}
+
+	for(j = 4;j > 0;j--)
+	{
+		n++;num[i][j] = n;
+	}
+	for(i = 4;i > 0;i--)
+	{
+		n++;num[i][j] = n;
+	}
+	i++;
+	for(j = 1;j < 3;j++)
+	{
+		n++;num[i][j] = n;
+	}
+
+	for(i = 1;i < 3;i++)
+	{
+		n++;num[i][j] = n;
+	}
+
+	for(j = 3;j > 1;j--)
+	{
+		n++;num[i][j] = n;
+	}
+
+	for(i = 3;i > 1;i--)
+	{
+		n++;num[i][j] = n;
+	}
+	n++;
+	num[i+1][j+1] = n;
+
+	for(i = 0;i < 5;i++)
+	{
+		for(j = 0;j < 5;j++)
+			cout << num[i][j] <<" ";
+	cout<<endl;
+	}
+
+
+}
+	

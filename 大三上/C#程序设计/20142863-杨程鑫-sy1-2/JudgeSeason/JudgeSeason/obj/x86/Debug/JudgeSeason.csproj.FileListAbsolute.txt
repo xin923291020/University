@@ -1,0 +1,8 @@
+C:\Users\asus1\Desktop\C#窗口程序\JudgeSeason\JudgeSeason\bin\Debug\JudgeSeason.exe
+C:\Users\asus1\Desktop\C#窗口程序\JudgeSeason\JudgeSeason\bin\Debug\JudgeSeason.pdb
+C:\Users\asus1\Desktop\C#窗口程序\JudgeSeason\JudgeSeason\obj\x86\Debug\JudgeSeason.exe
+C:\Users\asus1\Desktop\C#窗口程序\JudgeSeason\JudgeSeason\obj\x86\Debug\JudgeSeason.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\JudgeSeason\JudgeSeason\obj\x86\Debug\JudgeSeason.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\JudgeSeason\JudgeSeason\obj\x86\Debug\JudgeSeason.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\JudgeSeason\JudgeSeason\bin\Debug\JudgeSeason.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\JudgeSeason\JudgeSeason\bin\Debug\JudgeSeason.pdb

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.InvoiceDetails" schema="dbo" catalog="VatInvoiceStatistics">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="invoiceCode" type="java.lang.String">
+            <column name="invoiceCode" length="40" />
+        </property>
+        <property name="serviceName" type="java.lang.String">
+            <column name="serviceName" length="200" />
+        </property>
+        <property name="specificationModel" type="java.lang.String">
+            <column name="specificationModel" length="20" />
+        </property>
+        <property name="unit" type="java.lang.String">
+            <column name="unit" length="20" />
+        </property>
+        <property name="number" type="java.lang.Integer">
+            <column name="number" />
+        </property>
+        <property name="unitPrice" type="java.lang.Double">
+            <column name="unitPrice" precision="18" />
+        </property>
+        <property name="amount" type="java.lang.Double">
+            <column name="amount" precision="18" />
+        </property>
+        <property name="taxRate" type="java.lang.Double">
+            <column name="taxRate" precision="2" />
+        </property>
+        <property name="tax" type="java.lang.Double">
+            <column name="tax" precision="18" />
+        </property>
+    </class>
+</hibernate-mapping>

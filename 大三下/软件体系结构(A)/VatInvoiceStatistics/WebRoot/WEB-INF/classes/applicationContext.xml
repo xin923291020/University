@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 数据库连接配置 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+		</property>
+		<property name="url"
+			value="jdbc:sqlserver://localhost:1433;databasename=VatInvoiceStatistics">
+		</property>
+		<property name="username" value="sa"></property>
+		<property name="password" value="19951122"></property>
+	</bean>
+	<!-- session工厂的配置 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<!-- 使用annotatedClasses，实体与数据库之间的映射,在实体类加入注解，value中填写类名； 使用mappingResources，需要加映射配置文件：XXX.hbm.xml，value中填写配置文件路径 -->
+		<property name="mappingResources">
+			<list>
+				<value>model/Account.hbm.xml</value>
+				<value>model/Invoice.hbm.xml</value>
+				<value>model/InvoiceDetails.hbm.xml</value>
+				<value>model/Organization.hbm.xml</value>
+				<value>model/Taxpayer.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.SQLServerDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- 事务管理 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!-- 导入excel -->
+	<bean id="myInvoiceDao" class="dao.InvoiceDao">
+		<property name="sessionFactory">
+		    <ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="myImportService" class="service.ImportService">
+		<property name="invoiceDao">
+		    <ref bean="myInvoiceDao"/>
+		</property>
+	</bean>
+	<!-- 按年份查询 -->
+	<bean id="myGetChartInfoService" class="service.GetChartInfoService">
+		<property name="invoiceDao">
+		    <ref bean="myInvoiceDao"/>
+		</property>
+	</bean>
+	<!-- 按年份查询 -->
+	<bean id="myAccountDao" class="dao.AccountDao">
+		<property name="sessionFactory">
+		    <ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="myAccountService" class="service.AccountService">
+		<property name="accountDao">
+		    <ref bean="myAccountDao"/>
+		</property>
+	</bean>
+	<!-- 随机生成发票 -->
+	<bean id="myCreateInvoiceService" class="service.CreateInvoiceService"></bean>
+	<!-- 获取分析数据 -->
+	<bean id="myAnalysisService" class="service.AnalysisService">
+		<property name="invoiceDao">
+		    <ref bean="myInvoiceDao"/>
+		</property>
+	</bean>
+</beans>

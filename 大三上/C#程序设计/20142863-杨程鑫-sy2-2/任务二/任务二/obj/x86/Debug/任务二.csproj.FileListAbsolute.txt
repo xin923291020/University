@@ -1,0 +1,5 @@
+C:\Users\asus1\Desktop\C#程序\任务二\任务二\bin\Debug\任务二.exe
+C:\Users\asus1\Desktop\C#程序\任务二\任务二\bin\Debug\任务二.pdb
+C:\Users\asus1\Desktop\C#程序\任务二\任务二\obj\x86\Debug\任务二.exe
+C:\Users\asus1\Desktop\C#程序\任务二\任务二\obj\x86\Debug\任务二.pdb
+C:\Users\asus1\Desktop\C#程序\任务二\任务二\obj\x86\Debug\任务二.csprojResolveAssemblyReference.cache

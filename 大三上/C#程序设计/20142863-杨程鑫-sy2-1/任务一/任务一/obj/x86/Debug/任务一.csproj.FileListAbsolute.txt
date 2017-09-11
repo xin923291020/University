@@ -1,0 +1,4 @@
+C:\Users\asus1\Desktop\C#程序\任务一\任务一\bin\Debug\任务一.exe
+C:\Users\asus1\Desktop\C#程序\任务一\任务一\bin\Debug\任务一.pdb
+C:\Users\asus1\Desktop\C#程序\任务一\任务一\obj\x86\Debug\任务一.exe
+C:\Users\asus1\Desktop\C#程序\任务一\任务一\obj\x86\Debug\任务一.pdb

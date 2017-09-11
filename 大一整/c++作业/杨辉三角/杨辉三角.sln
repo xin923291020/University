@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "杨辉三角", "杨辉三角\杨辉三角.vcproj", "{BFB1CACF-0ED3-4013-8D88-C0EB963A75CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB1CACF-0ED3-4013-8D88-C0EB963A75CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFB1CACF-0ED3-4013-8D88-C0EB963A75CD}.Debug|Win32.Build.0 = Debug|Win32
+		{BFB1CACF-0ED3-4013-8D88-C0EB963A75CD}.Release|Win32.ActiveCfg = Release|Win32
+		{BFB1CACF-0ED3-4013-8D88-C0EB963A75CD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符串插入", "字符串插入\字符串插入.vcproj", "{87DA53EF-E974-4043-923B-532B00CDE422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DA53EF-E974-4043-923B-532B00CDE422}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87DA53EF-E974-4043-923B-532B00CDE422}.Debug|Win32.Build.0 = Debug|Win32
+		{87DA53EF-E974-4043-923B-532B00CDE422}.Release|Win32.ActiveCfg = Release|Win32
+		{87DA53EF-E974-4043-923B-532B00CDE422}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

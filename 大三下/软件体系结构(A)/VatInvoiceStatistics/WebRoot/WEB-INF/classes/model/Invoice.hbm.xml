@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Invoice" schema="dbo"
+		catalog="VatInvoiceStatistics">
+		<id name="invoiceCode" type="java.lang.String">
+			<column name="invoiceCode" length="40" />
+			<generator class="assigned" />
+		</id>
+		<property name="buyer" type="java.lang.String">
+			<column name="buyer" length="20" />
+		</property>
+		<property name="seller" type="java.lang.String">
+			<column name="seller" length="20" />
+		</property>
+		<property name="totalAmount" type="java.lang.Double">
+			<column name="totalAmount" precision="18" />
+		</property>
+		<property name="totalTax" type="java.lang.Double">
+			<column name="totalTax" precision="18" />
+		</property>
+	</class>
+</hibernate-mapping>

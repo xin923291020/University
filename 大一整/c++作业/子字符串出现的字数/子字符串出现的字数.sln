@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "子字符串出现的字数", "子字符串出现的字数\子字符串出现的字数.vcproj", "{A01AA00A-3360-4E09-AF3A-4ECCB90D3AB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A01AA00A-3360-4E09-AF3A-4ECCB90D3AB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A01AA00A-3360-4E09-AF3A-4ECCB90D3AB7}.Debug|Win32.Build.0 = Debug|Win32
+		{A01AA00A-3360-4E09-AF3A-4ECCB90D3AB7}.Release|Win32.ActiveCfg = Release|Win32
+		{A01AA00A-3360-4E09-AF3A-4ECCB90D3AB7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

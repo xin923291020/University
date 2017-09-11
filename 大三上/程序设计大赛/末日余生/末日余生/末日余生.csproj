@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EA56E27-3AD5-49A0-B771-BF559D7115F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>末日余生</RootNamespace>
+    <AssemblyName>末日余生</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>被吓到.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>..\packages\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guide.Designer.cs">
+      <DependentUpon>Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1ActionFeedBack.cs" />
+    <Compile Include="Models\EventTable.cs" />
+    <Compile Include="Models\Level1.cs" />
+    <Compile Include="Models\Level1_0_0.cs" />
+    <Compile Include="Models\Level1_0_1.cs" />
+    <Compile Include="Models\Level1_0_2.cs" />
+    <Compile Include="Models\Level1_0_3.cs" />
+    <Compile Include="Models\Level1_1_0.cs" />
+    <Compile Include="Models\Level1_1_1.cs" />
+    <Compile Include="Models\Level1_1_2.cs" />
+    <Compile Include="Models\Level1_1_3.cs" />
+    <Compile Include="Models\Level1_2_0.cs" />
+    <Compile Include="Models\Level1_2_1.cs" />
+    <Compile Include="Models\Level1_2_2.cs" />
+    <Compile Include="Models\Level1_2_3.cs" />
+    <Compile Include="Models\Level1_3_0.cs" />
+    <Compile Include="Models\Level1_3_1.cs" />
+    <Compile Include="Models\Level1_3_2.cs" />
+    <Compile Include="Models\Level1_3_3.cs" />
+    <Compile Include="Models\Mapping\EventTableMap.cs" />
+    <Compile Include="Models\Mapping\Level1Map.cs" />
+    <Compile Include="Models\Mapping\Level1_0_0Map.cs" />
+    <Compile Include="Models\Mapping\Level1_0_1Map.cs" />
+    <Compile Include="Models\Mapping\Level1_0_2Map.cs" />
+    <Compile Include="Models\Mapping\Level1_0_3Map.cs" />
+    <Compile Include="Models\Mapping\Level1_1_0Map.cs" />
+    <Compile Include="Models\Mapping\Level1_1_1Map.cs" />
+    <Compile Include="Models\Mapping\Level1_1_2Map.cs" />
+    <Compile Include="Models\Mapping\Level1_1_3Map.cs" />
+    <Compile Include="Models\Mapping\Level1_2_0Map.cs" />
+    <Compile Include="Models\Mapping\Level1_2_1Map.cs" />
+    <Compile Include="Models\Mapping\Level1_2_2Map.cs" />
+    <Compile Include="Models\Mapping\Level1_2_3Map.cs" />
+    <Compile Include="Models\Mapping\Level1_3_0Map.cs" />
+    <Compile Include="Models\Mapping\Level1_3_1Map.cs" />
+    <Compile Include="Models\Mapping\Level1_3_2Map.cs" />
+    <Compile Include="Models\Mapping\Level1_3_3Map.cs" />
+    <Compile Include="Models\Mapping\RoleActionMap.cs" />
+    <Compile Include="Models\Mapping\RoleAttackMap.cs" />
+    <Compile Include="Models\Mapping\RoleAttributeMap.cs" />
+    <Compile Include="Models\Mapping\RoleLevelMap.cs" />
+    <Compile Include="Models\Mapping\RucksackMap.cs" />
+    <Compile Include="Models\Mapping\SkillMap.cs" />
+    <Compile Include="Models\Mapping\ZombieAttributeMap.cs" />
+    <Compile Include="Models\RoleAction.cs" />
+    <Compile Include="Models\RoleAttack.cs" />
+    <Compile Include="Models\RoleAttribute.cs" />
+    <Compile Include="Models\RoleLevel.cs" />
+    <Compile Include="Models\Rucksack.cs" />
+    <Compile Include="Models\Skill.cs" />
+    <Compile Include="Models\TheLastofUsContext.cs" />
+    <Compile Include="Models\ZombieAttribute.cs" />
+    <Compile Include="MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleAction.cs" />
+    <Compile Include="RoleAttcak.cs" />
+    <Compile Include="RoleAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleAttribute.Designer.cs">
+      <DependentUpon>RoleAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rucksack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rucksack.Designer.cs">
+      <DependentUpon>Rucksack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkillsTab.Designer.cs">
+      <DependentUpon>SkillsTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheLastofUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheLastofUs.Designer.cs">
+      <DependentUpon>TheLastofUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Guide.resx">
+      <DependentUpon>Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleAttribute.resx">
+      <DependentUpon>RoleAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rucksack.resx">
+      <DependentUpon>Rucksack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillsTab.resx">
+      <DependentUpon>SkillsTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheLastofUs.resx">
+      <DependentUpon>TheLastofUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="被吓到.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\asus1\Desktop\C#程序\CountSum\CountSum\bin\Debug\CountSum.exe
+C:\Users\asus1\Desktop\C#程序\CountSum\CountSum\bin\Debug\CountSum.pdb
+C:\Users\asus1\Desktop\C#程序\CountSum\CountSum\obj\x86\Debug\CountSum.exe
+C:\Users\asus1\Desktop\C#程序\CountSum\CountSum\obj\x86\Debug\CountSum.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountSum\CountSum\obj\x86\Debug\CountSum.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountSum\CountSum\obj\x86\Debug\CountSum.pdb
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountSum\CountSum\bin\Debug\CountSum.exe
+C:\Users\asus1\Desktop\大三上学期课程作业\C#net作业\C#程序\CountSum\CountSum\bin\Debug\CountSum.pdb

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "拓扑排序", "拓扑排序\拓扑排序.vcxproj", "{EA19A6A6-7758-41BB-B826-4F93E89EEF83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA19A6A6-7758-41BB-B826-4F93E89EEF83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA19A6A6-7758-41BB-B826-4F93E89EEF83}.Debug|Win32.Build.0 = Debug|Win32
+		{EA19A6A6-7758-41BB-B826-4F93E89EEF83}.Release|Win32.ActiveCfg = Release|Win32
+		{EA19A6A6-7758-41BB-B826-4F93E89EEF83}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

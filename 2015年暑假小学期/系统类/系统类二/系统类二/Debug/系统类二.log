@@ -1,0 +1,29 @@
+﻿生成启动时间为 2015/7/14 20:25:21。
+     1>项目“F:\15年暑假小学期\系统类\系统类二\系统类二\系统类二.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\系统类二.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         g:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp supervise_info.cpp
+         supervise_info.cpp
+         main.cpp
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\系统类二.exe.embed.manifest.res" "Debug\系统类二_manifest.rc" 
+       Link:
+         g:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\15年暑假小学期\系统类\系统类二\Debug\系统类二.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\系统类二.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\15年暑假小学期\系统类\系统类二\Debug\系统类二.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\15年暑假小学期\系统类\系统类二\Debug\系统类二.lib" /MACHINE:X86 "Debug\系统类二.exe.embed.manifest.res"
+         Debug\main.obj
+         Debug\supervise_info.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\系统类二.exe.embed.manifest" /manifest "Debug\系统类二.exe.intermediate.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         系统类二.vcxproj -> F:\15年暑假小学期\系统类\系统类二\Debug\系统类二.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\系统类二.unsuccessfulbuild”。
+         正在对“Debug\系统类二.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\15年暑假小学期\系统类\系统类二\系统类二\系统类二.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.59

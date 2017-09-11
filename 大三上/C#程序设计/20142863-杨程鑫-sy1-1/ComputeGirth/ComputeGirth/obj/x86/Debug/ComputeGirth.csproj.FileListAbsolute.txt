@@ -1,0 +1,4 @@
+C:\Users\asus1\Desktop\C#窗口程序\ComputeGirth\ComputeGirth\bin\Debug\ComputeGirth.exe
+C:\Users\asus1\Desktop\C#窗口程序\ComputeGirth\ComputeGirth\bin\Debug\ComputeGirth.pdb
+C:\Users\asus1\Desktop\C#窗口程序\ComputeGirth\ComputeGirth\obj\x86\Debug\ComputeGirth.exe
+C:\Users\asus1\Desktop\C#窗口程序\ComputeGirth\ComputeGirth\obj\x86\Debug\ComputeGirth.pdb

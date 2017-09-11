@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="前驱和后继">
+</Property><Property Name="解决方案文件" Value="F:\20142863_杨程鑫\前驱和后继\前驱和后继.sln">
+</Property><Property Name="用户选项文件" Value="F:\20142863_杨程鑫\前驱和后继\前驱和后继.suo">
+</Property><Property Name="Date" Value="2015年3月30日">
+</Property><Property Name="Time" Value="21:04">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="前驱和后继.sln" Description="文件已成功备份为 F:\20142863_杨程鑫\前驱和后继\前驱和后继.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="前驱和后继.suo" Description="文件已成功备份为 F:\20142863_杨程鑫\前驱和后继\前驱和后继.suo.old">
+</Event><Event ErrorLevel="0" Project="前驱和后继" Source="前驱和后继\前驱和后继.vcproj" Description="Converting project file 'F:\20142863_杨程鑫\前驱和后继\前驱和后继\前驱和后继.vcproj'.">
+</Event><Event ErrorLevel="1" Project="前驱和后继" Source="前驱和后继\前驱和后继.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="前驱和后继" Source="前驱和后继\前驱和后继.vcproj" Description="Done converting to new project file 'F:\20142863_杨程鑫\前驱和后继\前驱和后继\前驱和后继.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="前驱和后继" Source="前驱和后继\前驱和后继.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="前驱和后继.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="前驱和后继.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "判断奇偶", "判断奇偶\判断奇偶.vcproj", "{97A83B77-FB04-4655-BD8D-F8900BEBF897}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A83B77-FB04-4655-BD8D-F8900BEBF897}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97A83B77-FB04-4655-BD8D-F8900BEBF897}.Debug|Win32.Build.0 = Debug|Win32
+		{97A83B77-FB04-4655-BD8D-F8900BEBF897}.Release|Win32.ActiveCfg = Release|Win32
+		{97A83B77-FB04-4655-BD8D-F8900BEBF897}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

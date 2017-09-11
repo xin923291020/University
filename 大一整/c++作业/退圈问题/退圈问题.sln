@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "退圈问题", "退圈问题\退圈问题.vcproj", "{7F09CEF2-4CBE-4F45-9D33-CDF39DD98063}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F09CEF2-4CBE-4F45-9D33-CDF39DD98063}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F09CEF2-4CBE-4F45-9D33-CDF39DD98063}.Debug|Win32.Build.0 = Debug|Win32
+		{7F09CEF2-4CBE-4F45-9D33-CDF39DD98063}.Release|Win32.ActiveCfg = Release|Win32
+		{7F09CEF2-4CBE-4F45-9D33-CDF39DD98063}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

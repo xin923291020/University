@@ -1,0 +1,9 @@
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.csprojResolveAssemblyReference.cache
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.Properties.Resources.resources
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.围棋.resources
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.csproj.GenerateResource.Cache
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\bin\Debug\围棋.exe.config
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\bin\Debug\围棋.exe
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\bin\Debug\围棋.pdb
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.exe
+C:\Users\asus1\Desktop\C#程序\围棋\围棋\obj\x86\Debug\围棋.pdb

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- Add packages here -->
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+    name="myRequestParser" class="parse.RequestParseWrapper"
+    scope="default" optional="true"/>
+    <constant name="struts.multipart.parser" value="myRequestParser"/>
+    <constant name="struts.devMode" value="true"/>
+    <package name="import" namespace="/" extends="struts-default">
+        <action name="importAction" class="action.ImportAction" method="doImport"></action>
+    </package>
+    <package name="chart" namespace="/" extends="struts-default">
+        <action name="chartInOneYearAction" class="action.GetChartInfoAction" method="doGetInOneYear"></action>
+        <action name="chartInManyYearAction" class="action.GetChartInfoAction" method="doGetInManyYear"></action>
+        <action name="chartInDayAction" class="action.GetChartInfoAction" method="doGetByCurrentTime"></action>
+        <action name="createInvoiceAction" class="action.CreateInvoiceAction" method="doCreate"></action>
+    </package>
+    <package name="user" namespace="/" extends="struts-default">
+        <action name="loginAction" class="action.LoginAction" method="doLogin"></action>
+    </package>
+    <package name="analysis" namespace="/" extends="struts-default">
+        <action name="analysisAction" class="action.AnalysisAction" method="doAnalysis"></action>
+    </package>
+</struts>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "弹球落地", "弹球落地\弹球落地.vcproj", "{1750DC8E-E8F5-41A3-AA4C-E95E7B656A00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1750DC8E-E8F5-41A3-AA4C-E95E7B656A00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1750DC8E-E8F5-41A3-AA4C-E95E7B656A00}.Debug|Win32.Build.0 = Debug|Win32
+		{1750DC8E-E8F5-41A3-AA4C-E95E7B656A00}.Release|Win32.ActiveCfg = Release|Win32
+		{1750DC8E-E8F5-41A3-AA4C-E95E7B656A00}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
